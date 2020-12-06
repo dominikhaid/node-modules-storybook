@@ -1,0 +1,82 @@
+export const appState = {
+  user: {
+    customerNumber: '0C83D106-0218-F746-4B0F-66E6A98D631D',
+    email: 'augue.eu.tempor@nullaDonec.ca',
+    password: 'RadnOmPass23!',
+    userName: 'Harlan Clark',
+    contactLastName: 'Gibbs',
+    contactFirstName: 'Dominique',
+    phone: '458-2682',
+    addressLine1: '5781 Suscipit, Rd.',
+    city: 'Ibadan',
+    state: 'Oyo',
+    customerPhoto: 'http://localhost/app/demo-shop/images/dominikhaid.jpg',
+    postalCode: '110793',
+    country: 'Norfolk Island',
+    salesRepEmployeeNumber: 574,
+    creditLimit: 21811,
+  },
+  card: {
+    products: [
+      {
+        productCode: '96820-5102',
+        productName: 'Turbo Levo SL Comp',
+        colors: 'red,turquoise',
+        productPhotos: 'side.jpg,detail.jpg,back.jpg',
+        productLine: 'E-Mountain Bikes',
+        productVendor: 'Specialized',
+        productDescription:
+          'Das Levo SL ist eine neue, leichte Generation von E-Mountainbikes, das die schnelle und vielseitige Plattform unseres Stumpjumper nutzt… und gerade genug Power bietet, um eine völlig neue Ride-Erfahrung zu erleben. Dank einer cleveren Komponentenauswahl bringt das Levo SL Comp all das mit - zu einem ebenso radikalen Preis.',
+        productContent:
+          'Das Levo SL ist eine neue, leichte Generation von E-Mountainbikes, das die schnelle und vielseitige Plattform unseres Stumpjumper nutzt… und gerade genug Power bietet, um eine völlig neue Ride-Erfahrung zu erleben. Dank einer cleveren Komponentenauswahl bringt das Levo SL Comp all das mit - zu einem ebenso radikalen Preis.',
+        quantityInStock: 1000,
+        buyPrice: 5109.0,
+        MSRP: 5999.0,
+        createdAt: '',
+        updatedAt: '',
+        color: 'red',
+        quantity: '1',
+      },
+      {
+        productCode: '91321-7001',
+        productName: 'Epic Hardtail',
+        colors: 'red,black',
+        productPhotos: 'side.jpg,detail.jpg,back.jpg',
+        productLine: 'Cross Country Mountain Bikes',
+        productVendor: 'Specialized',
+        productDescription:
+          "Du hast den Blick gesehen. Den 'Die-fahren-das-nicht-wirklich-auf-einem-Hardtail' -Blick. Nun, bereite dich darauf vor, mit dem Epic Hardtail noch viel mehr davon zu bekommen. Schnell und leicht trifft auf vertrauenserweckend und leistungsfähig - all das in einem Bike, das entwickelt wurde, um den Cross Country-Speed neu zu definieren.",
+        productContent:
+          "Du hast den Blick gesehen. Den 'Die-fahren-das-nicht-wirklich-auf-einem-Hardtail' -Blick. Nun, bereite dich darauf vor, mit dem Epic Hardtail noch viel mehr davon zu bekommen. Schnell und leicht trifft auf vertrauenserweckend und leistungsfähig - all das in einem Bike, das entwickelt wurde, um den Cross Country-Speed neu zu definieren. Das Streben nach dem leichtest möglichen Bike war lange Zeit ein Rennen innerhalb des Rennens, aber zu welchem Preis? Der Kampf um jedes Gramm wurde nicht ohne Opfer ausgefochten - XC-Hardtail Racebikes stehen für einen hartes, nervöses Fahrgefühl, auf Kosten der Leistungsfähigkeit und Vielseitigkeit. Aber wer hat gesagt, dass einen der Kampf gegen solch ein Ross schneller macht? Stattdessen erkannten wir, dass das schnellste Fahrrad mehr ist als nur das leichteste. Und genau hier kommt unser Trail-fressendes, erstaunlich komfortables, federleichtes und super schnelle Epic Hardtail ins Spiel. Natürlich haben wir jeden Zentimeter des Epic Hardtail-Rahmens optimiert, um den ohnehin leichtesten Serien-Hardtail-Rahmen der Welt zu bauen. Aber eine Priorität lag auch darauf, ein Epic Hardtail zu entwickeln, das ebenso leistungsfähig wie auch komfortabel ist - mit einer aggressiven Singletrack-Geometrie, erhöhter Reifenfreiheit und einem Rahmen, der hier auch auf eine erhöhte vertikale Nachgiebigkeit ausgelegt ist. Eine RockShox Judy Gold Gabel sowie ein Shimano Antrieb sind die Highlights des Aufbaus und sorgen für ein ausgewogenes Preis-Leistungs-Verhältnis und damit für ein beeindruckendes Ergebnis.",
+        quantityInStock: 500,
+        buyPrice: 2099.0,
+        MSRP: 2099.0,
+        createdAt: '',
+        updatedAt: '',
+        color: 'black',
+        quantity: '5',
+      },
+    ],
+  },
+  products: [
+    {
+      productCode: '96820-5102',
+      productName: 'Turbo Levo SL Comp',
+      colors: 'red,turquoise ',
+      productPhotos: 'side.jpg,detail.jpg,back.jpg',
+      productLine: 'E-Mountain Bikes',
+      productVendor: 'Specialized',
+      productDescription:
+        'Das Levo SL ist eine neue, leichte Generation von E-Mountainbikes, das die schnelle und vielseitige Plattform unseres Stumpjumper nutzt… und gerade genug Power bietet, um eine völlig neue Ride-Erfahrung zu erleben. Dank einer cleveren Komponentenauswahl bringt das Levo SL Comp all das mit - zu einem ebenso radikalen Preis.',
+      productContent:
+        'Das Levo SL ist eine neue, leichte Generation von E-Mountainbikes, das die schnelle und vielseitige Plattform unseres Stumpjumper nutzt… und gerade genug Power bietet, um eine völlig neue Ride-Erfahrung zu erleben. Dank einer cleveren Komponentenauswahl bringt das Levo SL Comp all das mit - zu einem ebenso radikalen Preis.',
+      quantityInStock: 1000,
+      buyPrice: 5109.0,
+      MSRP: 5999.0,
+      createdAt: '',
+      updatedAt: '',
+    },
+  ],
+  updateState: () => card,
+  updateCard: () => card,
+};
