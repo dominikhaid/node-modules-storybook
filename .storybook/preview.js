@@ -1,14 +1,24 @@
-import antdStyles from '../src/antd/antd.less';
-import React from 'react';
-import {GlobalStyle} from '../src/shared/Global';
-import {withNextRouter} from 'storybook-addon-next-router';
-import {addDecorator} from '@storybook/react';
-import '@storybook/addon-console';
-import {setConsoleOptions} from '@storybook/addon-console';
-import {withConsole} from '@storybook/addon-console';
-import {withScreenshot} from 'storycap';
-import {configure} from '@storybook/react';
+//import Tailwind from "../public/css/global.css";
+import StorbookCss from "./stroybook.css";
 
+import React from "react";
+import { withNextRouter } from "storybook-addon-next-router";
+import { addDecorator } from "@storybook/react";
+import "@storybook/addon-console";
+import { setConsoleOptions } from "@storybook/addon-console";
+import { withConsole } from "@storybook/addon-console";
+import { withScreenshot } from "storycap";
+import { configure } from "@storybook/react";
+
+// import {setDefaults} from 'react-storybook-addon-props-combinations';
+
+// setDefaults({
+//   // overwrite global defaults here
+// });
+
+// configure(() => {
+//   // ...
+// }, module);
 
 addDecorator((storyFn, context) => withConsole()(storyFn)(context));
 
@@ -18,37 +28,36 @@ setConsoleOptions({
 
 addDecorator(
   withNextRouter({
-    path: '/',
-    asPath: '/',
+    path: "/",
+    asPath: "/",
     query: {},
     push() {},
-  }),
+  })
 );
 
-import {INITIAL_VIEWPORTS} from '@storybook/addon-viewport';
+import { INITIAL_VIEWPORTS } from "@storybook/addon-viewport";
 
 const customViewports = {
   kindleFire2: {
-    name: 'Kindle Fire 2',
+    name: "Kindle Fire 2",
     styles: {
-      width: '600px',
-      height: '963px',
+      width: "600px",
+      height: "963px",
     },
   },
   kindleFireHD: {
-    name: 'Kindle Fire HD',
+    name: "Kindle Fire HD",
     styles: {
-      width: '533px',
-      height: '801px',
+      width: "533px",
+      height: "801px",
     },
   },
 };
 
 export const decorators = [
   withScreenshot,
-  Story => (
+  (Story) => (
     <>
-      <GlobalStyle />
       <Story />
     </>
   ),
@@ -56,15 +65,15 @@ export const decorators = [
 
 export const parameters = {
   backgrounds: {
-    default: 'light',
+    default: "light",
     values: [
       {
-        name: 'light',
-        value: '#fff',
+        name: "light",
+        value: "#fff",
       },
       {
-        name: 'dark',
-        value: '#041E34',
+        name: "dark",
+        value: "#041E34",
       },
     ],
   },
@@ -74,11 +83,11 @@ export const parameters = {
         width: 2560,
         height: 1440,
       },
-      medium: 'Kindle Fire HDX landscape',
-      small: 'iPad',
-      xsmall: 'iPhone 5',
+      medium: "Kindle Fire HDX landscape",
+      small: "iPad",
+      xsmall: "iPhone 5",
     },
-    delay: 200,
+    delay: 500,
   },
   viewport: {
     viewports: {
@@ -86,9 +95,12 @@ export const parameters = {
       ...customViewports,
     },
   },
-  actions: {argTypesRegex: '^on[A-Z].*'},
+  actions: { argTypesRegex: "^on[A-Z].*" },
+  // Storybook a11y addon configuration
   a11y: {
-    element: '#root',
+    // the target DOM element
+    element: "#root",
+    // sets the execution mode for the addon
     manual: false,
   },
 };

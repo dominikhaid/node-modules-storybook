@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@font-face {
+  font-family: 'weathericons';
+  src: url('/fonts/weather/weathericons-regular-webfont.eot');
+  src: url('/fonts/weather/weathericons-regular-webfont.eot?#iefix')
+      format('embedded-opentype'),
+    url('/fonts/weather/weathericons-regular-webfont.woff2') format('woff2'),
+    url('/fonts/weather/weather/weathericons-regular-webfont.woff')
+      format('woff'),
+    url('/fonts/weather/weathericons-regular-webfont.ttf') format('truetype'),
+    url('/fonts/weather/weathericons-regular-webfont.svg#weather_iconsregular')
+      format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#__next {
+  min-height: 850px !important;
+}
+
+nav#main-menu {
+  min-height: 850px !important;
+}
+
+fieldset,
+fieldset > * {
+  height: fit-content;
+}
+
+@media screen and (max-width: 765px) {
+  #__next {
+    /*display: inherit !important;*/
+    min-height: unset !important;
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+}
