@@ -8,6 +8,14 @@ module.exports = {
   addons: [
     '@storybook/addon-links',
     '@storybook/addon-essentials',
+    {
+      name: '@storybook/addon-postcss',
+      options: {
+        postcssLoaderOptions: {
+          implementation: require('postcss'),
+        },
+      },
+    },
     '@storybook/addon-storysource',
     '@storybook/addon-actions',
     'storycap',
@@ -23,28 +31,28 @@ module.exports = {
 
     config.module.rules = rules;
 
-    config.module.rules.push({
-      test: /\.less$/,
-      use: [
-        'style-loader',
-        {
-          loader: 'css-loader',
-          options: {
-            modules: false,
-            // localIdentName: '[local]___[hash:base64:5]',
-          },
-        },
-        {
-          loader: 'less-loader',
-          options: {
-            lessOptions: {
-              javascriptEnabled: true,
-            },
-          },
-        },
-      ],
-      include: path.resolve(__dirname, '../src'),
-    });
+    // config.module.rules.push({
+    //   test: /\.less$/,
+    //   use: [
+    //     'style-loader',
+    //     {
+    //       loader: 'css-loader',
+    //       options: {
+    //         modules: false,
+    //         // localIdentName: '[local]___[hash:base64:5]',
+    //       },
+    //     },
+    //     {
+    //       loader: 'less-loader',
+    //       options: {
+    //         lessOptions: {
+    //           javascriptEnabled: true,
+    //         },
+    //       },
+    //     },
+    //   ],
+    //   include: path.resolve(__dirname, '../src'),
+    // });
 
     config.module.rules.unshift({
       test: /\.svg$/,

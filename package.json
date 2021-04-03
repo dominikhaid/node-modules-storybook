@@ -1,19 +1,21 @@
 {
-  "name": "dominikhaid-next",
+  "name": "storybook-react",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "@sambego/storybook-styles": "^1.0.0",
-    "@storybook/addon-actions": "^6.1.18",
-    "@storybook/addon-console": "^1.2.3",
-    "@storybook/addon-controls": "^6.1.18",
-    "@storybook/addon-essentials": "^5.3.21",
-    "@storybook/addon-links": "^6.1.18",
-    "@storybook/addon-storysource": "^6.1.18",
-    "@storybook/react": "^4.0.2",
-    "storybook-addon-designs": "^5.4.3",
+    "react-storybook-addon-props-combinations": "^1.1.0",
+    "storybook-addon-designs": "^6.0.0-alpha.3",
     "storybook-addon-next-router": "^2.0.4",
-    "storycap": "^3.0.3"
+    "@storybook/addon-console": "^1.2.3",
+    "storycap": "^3.0.3",
+    "@sambego/storybook-styles": "^1.0.0",
+    "@storybook/addon-actions": "^6.2.2",
+    "@storybook/addon-controls": "^6.2.2",
+    "@storybook/addon-essentials": "^6.2.2",
+    "@storybook/addon-links": "^6.2.2",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/addon-storysource": "^6.2.2",
+    "@storybook/react": "^6.2.2"
   },
   "scripts": {
     "storybook:start": "start-storybook -c .storybook -s ./public -p 6006",
